@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-404-ts-6cfc0d9b99f206f4ea20.js","mappings":"wIAGA,UAHiB,WACf,MAAO,WADT,C","sources":["webpack://habistack-public-web/./src/pages/404.ts"],"sourcesContent":["const NotFound = () => {\n  return \"Not Found\";\n};\nexport default NotFound;"],"names":[],"sourceRoot":""}
