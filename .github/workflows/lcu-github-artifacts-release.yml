@@ -1,4 +1,4 @@
-name: kacloomis/gatsby-starter-blog
+name: GitHub Artifacts - Release
 
 on:
   push:
@@ -13,7 +13,7 @@ env:
   Branches: main
   MainBranch: main
   NPMRegistry: https://registry.npmjs.org/
-  InstallCommand: npm i
+  InstallCommand: npm ci
   BuildCommand: npm run build
   Output: ./public
 
