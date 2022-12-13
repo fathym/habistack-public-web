@@ -1,4 +1,4 @@
-name: GitHub Artifacts - Release
+name: kacloomis/gatsby-starter-blog
 
 on:
   push:
@@ -13,7 +13,7 @@ env:
   Branches: main
   MainBranch: main
   NPMRegistry: https://registry.npmjs.org/
-  InstallCommand: npm ci
+  InstallCommand: npm i
   BuildCommand: npm run build
   Output: ./public
 
@@ -77,7 +77,7 @@ jobs:
       - uses: actions/setup-node@v2
         if: ${{ (!!env.InstallCommand || !!env.BuildCommand) && steps.package_json_exists.outputs.files_exists == 'true' }}
         with:
-          node-version: 14
+          node-version: '*'
           registry-url: ${{ env.NPMRegistry }}
 
       # install npm dependencies from package-lock.json
