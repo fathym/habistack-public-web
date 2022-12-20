@@ -6,7 +6,8 @@ on:
   pull_request:
     branches: [main]
   repository_dispatch:
-    types: [plasmic]    
+    types: [plasmic]  
+  workflow_dispatch:
 
 permissions: write-all
 
